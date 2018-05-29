@@ -36,6 +36,7 @@
 		15AD2A3120BCDCED00E3A180 /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2C20BCDCEC00E3A180 /* UILabel+Style.swift */; };
 		15AD2A3220BCDCED00E3A180 /* UIPageControl+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2D20BCDCEC00E3A180 /* UIPageControl+Style.swift */; };
 		15AD2A3320BCDCED00E3A180 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2F20BCDCEC00E3A180 /* UIViewController+Navigation.swift */; };
+		15AD2A3620BCDEB900E3A180 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A3520BCDEB900E3A180 /* OnboardingViewController.swift */; };
 		7F6CA810347318BB0B73E276 /* Pods_LiveUIBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C12DBDA4F920BA78F569B8F /* Pods_LiveUIBaseTests.framework */; };
 		A34AB0BBAA58855993A35109 /* Pods_LiveUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA666AD848EE3CDCDE7BDFC /* Pods_LiveUIBase.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		15AD2A2C20BCDCEC00E3A180 /* UILabel+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
 		15AD2A2D20BCDCEC00E3A180 /* UIPageControl+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Style.swift"; sourceTree = "<group>"; };
 		15AD2A2F20BCDCEC00E3A180 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		15AD2A3520BCDEB900E3A180 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		44BC8688547E32241BB2B519 /* Pods-LiveUIBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBaseTests/Pods-LiveUIBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		44F85FC2F5723492DE372687 /* Pods-LiveUIBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBase/Pods-LiveUIBase.debug.xcconfig"; sourceTree = "<group>"; };
 		5733197A7342B0C33B353496 /* Pods-LiveUIBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBase/Pods-LiveUIBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		15A88DC920BC170B00BC6DFA /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
+				15AD2A3420BCDEA800E3A180 /* Onboarding */,
 				15A88DCA20BC170B00BC6DFA /* ViewController.swift */,
 				15A88DCB20BC170B00BC6DFA /* TableViewController.swift */,
 				15A88DCC20BC170B00BC6DFA /* Error */,
@@ -310,6 +313,14 @@
 				15AD2A2F20BCDCEC00E3A180 /* UIViewController+Navigation.swift */,
 			);
 			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		15AD2A3420BCDEA800E3A180 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				15AD2A3520BCDEB900E3A180 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		3F8595061A19A488A88F962E /* Frameworks */ = {
@@ -516,6 +527,7 @@
 				15AD2A2720BCDCD200E3A180 /* Presentation.swift in Sources */,
 				15AD2A2220BCDCA900E3A180 /* ScrollView.swift in Sources */,
 				15AD2A1E20BCDCA900E3A180 /* BackgroundView.swift in Sources */,
+				15AD2A3620BCDEB900E3A180 /* OnboardingViewController.swift in Sources */,
 				15A88DDB20BC170B00BC6DFA /* Lang.swift in Sources */,
 				15AD2A2020BCDCA900E3A180 /* Label.swift in Sources */,
 				15AD2A1F20BCDCA900E3A180 /* GradientView.swift in Sources */,
