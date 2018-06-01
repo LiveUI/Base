@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15A88DB420BC156300BC6DFA /* LiveUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A88DAA20BC156300BC6DFA /* LiveUIBase.framework */; };
+		15020BEB20C1FEB000BBADBD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BE720C1FEB000BBADBD /* PrimaryButton.swift */; };
+		15020BEC20C1FEB000BBADBD /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BE820C1FEB000BBADBD /* SecondaryButton.swift */; };
+		15020BED20C1FEB000BBADBD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BE920C1FEB000BBADBD /* Button.swift */; };
+		15020BEE20C1FEB000BBADBD /* InlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BEA20C1FEB000BBADBD /* InlineButton.swift */; };
+		15020BF020C1FEC100BBADBD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BEF20C1FEC100BBADBD /* Alert.swift */; };
+		15020BF320C1FEE500BBADBD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020BF220C1FEE400BBADBD /* Theme.swift */; };
+		15A88DB420BC156300BC6DFA /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A88DAA20BC156300BC6DFA /* Base.framework */; };
 		15A88DB920BC156300BC6DFA /* LiveUIBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A88DB820BC156300BC6DFA /* LiveUIBaseTests.swift */; };
 		15A88DBB20BC156300BC6DFA /* LiveUIBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A88DAD20BC156300BC6DFA /* LiveUIBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15A88DD520BC170B00BC6DFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A88DC820BC170B00BC6DFA /* Coordinator.swift */; };
@@ -28,7 +34,6 @@
 		15AD2A2020BCDCA900E3A180 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A1820BCDCA900E3A180 /* Label.swift */; };
 		15AD2A2120BCDCA900E3A180 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A1920BCDCA900E3A180 /* View.swift */; };
 		15AD2A2220BCDCA900E3A180 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A1A20BCDCA900E3A180 /* ScrollView.swift */; };
-		15AD2A2320BCDCA900E3A180 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A1B20BCDCA900E3A180 /* Button.swift */; };
 		15AD2A2420BCDCA900E3A180 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A1D20BCDCA900E3A180 /* OnboardingView.swift */; };
 		15AD2A2720BCDCD200E3A180 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2520BCDCD200E3A180 /* Presentation.swift */; };
 		15AD2A2820BCDCD200E3A180 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2620BCDCD200E3A180 /* Style.swift */; };
@@ -54,10 +59,16 @@
 /* Begin PBXFileReference section */
 		0BA666AD848EE3CDCDE7BDFC /* Pods_LiveUIBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUIBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C12DBDA4F920BA78F569B8F /* Pods_LiveUIBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUIBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15A88DAA20BC156300BC6DFA /* LiveUIBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveUIBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15020BE720C1FEB000BBADBD /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		15020BE820C1FEB000BBADBD /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		15020BE920C1FEB000BBADBD /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		15020BEA20C1FEB000BBADBD /* InlineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineButton.swift; sourceTree = "<group>"; };
+		15020BEF20C1FEC100BBADBD /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Classes/Libs/Alert.swift; sourceTree = SOURCE_ROOT; };
+		15020BF220C1FEE400BBADBD /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		15A88DAA20BC156300BC6DFA /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A88DAD20BC156300BC6DFA /* LiveUIBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveUIBase.h; sourceTree = "<group>"; };
 		15A88DAE20BC156300BC6DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15A88DB320BC156300BC6DFA /* LiveUIBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveUIBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A88DB320BC156300BC6DFA /* BaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A88DB820BC156300BC6DFA /* LiveUIBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUIBaseTests.swift; sourceTree = "<group>"; };
 		15A88DBA20BC156300BC6DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A88DC820BC170B00BC6DFA /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -78,7 +89,6 @@
 		15AD2A1820BCDCA900E3A180 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		15AD2A1920BCDCA900E3A180 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		15AD2A1A20BCDCA900E3A180 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
-		15AD2A1B20BCDCA900E3A180 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		15AD2A1D20BCDCA900E3A180 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		15AD2A2520BCDCD200E3A180 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
 		15AD2A2620BCDCD200E3A180 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -106,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A88DB420BC156300BC6DFA /* LiveUIBase.framework in Frameworks */,
+				15A88DB420BC156300BC6DFA /* Base.framework in Frameworks */,
 				7F6CA810347318BB0B73E276 /* Pods_LiveUIBaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +124,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15020BE620C1FEB000BBADBD /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				15020BE720C1FEB000BBADBD /* PrimaryButton.swift */,
+				15020BE820C1FEB000BBADBD /* SecondaryButton.swift */,
+				15020BE920C1FEB000BBADBD /* Button.swift */,
+				15020BEA20C1FEB000BBADBD /* InlineButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		15020BF120C1FEE400BBADBD /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				15020BF220C1FEE400BBADBD /* Theme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		15A88DA020BC156300BC6DFA = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +159,8 @@
 		15A88DAB20BC156300BC6DFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15A88DAA20BC156300BC6DFA /* LiveUIBase.framework */,
-				15A88DB320BC156300BC6DFA /* LiveUIBaseTests.xctest */,
+				15A88DAA20BC156300BC6DFA /* Base.framework */,
+				15A88DB320BC156300BC6DFA /* BaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +194,7 @@
 		15A88DC620BC170B00BC6DFA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				15020BF120C1FEE400BBADBD /* Themes */,
 				15AD2A1320BCDCA900E3A180 /* Views */,
 				15A88DE720BC1A2E00BC6DFA /* Protocols */,
 				15A88DC720BC170B00BC6DFA /* Coordinators */,
@@ -225,6 +255,7 @@
 		15A88DD220BC170B00BC6DFA /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				15020BEF20C1FEC100BBADBD /* Alert.swift */,
 				15AD2A2520BCDCD200E3A180 /* Presentation.swift */,
 				15AD2A2620BCDCD200E3A180 /* Style.swift */,
 				15A88DD320BC170B00BC6DFA /* Lang.swift */,
@@ -274,10 +305,10 @@
 		15AD2A1720BCDCA900E3A180 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				15020BE620C1FEB000BBADBD /* Buttons */,
 				15AD2A1820BCDCA900E3A180 /* Label.swift */,
 				15AD2A1920BCDCA900E3A180 /* View.swift */,
 				15AD2A1A20BCDCA900E3A180 /* ScrollView.swift */,
-				15AD2A1B20BCDCA900E3A180 /* Button.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -357,9 +388,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		15A88DA920BC156300BC6DFA /* LiveUIBase */ = {
+		15A88DA920BC156300BC6DFA /* Base */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15A88DBE20BC156300BC6DFA /* Build configuration list for PBXNativeTarget "LiveUIBase" */;
+			buildConfigurationList = 15A88DBE20BC156300BC6DFA /* Build configuration list for PBXNativeTarget "Base" */;
 			buildPhases = (
 				5D816B73BB2E64A9FED55BB8 /* [CP] Check Pods Manifest.lock */,
 				15A88DA520BC156300BC6DFA /* Sources */,
@@ -371,14 +402,14 @@
 			);
 			dependencies = (
 			);
-			name = LiveUIBase;
+			name = Base;
 			productName = LiveUIBase;
-			productReference = 15A88DAA20BC156300BC6DFA /* LiveUIBase.framework */;
+			productReference = 15A88DAA20BC156300BC6DFA /* Base.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		15A88DB220BC156300BC6DFA /* LiveUIBaseTests */ = {
+		15A88DB220BC156300BC6DFA /* BaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15A88DC120BC156300BC6DFA /* Build configuration list for PBXNativeTarget "LiveUIBaseTests" */;
+			buildConfigurationList = 15A88DC120BC156300BC6DFA /* Build configuration list for PBXNativeTarget "BaseTests" */;
 			buildPhases = (
 				A6FAE551AB29BE3363F24EC1 /* [CP] Check Pods Manifest.lock */,
 				15A88DAF20BC156300BC6DFA /* Sources */,
@@ -391,9 +422,9 @@
 			dependencies = (
 				15A88DB620BC156300BC6DFA /* PBXTargetDependency */,
 			);
-			name = LiveUIBaseTests;
+			name = BaseTests;
 			productName = LiveUIBaseTests;
-			productReference = 15A88DB320BC156300BC6DFA /* LiveUIBaseTests.xctest */;
+			productReference = 15A88DB320BC156300BC6DFA /* BaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -414,7 +445,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15A88DA420BC156300BC6DFA /* Build configuration list for PBXProject "LiveUIBase" */;
+			buildConfigurationList = 15A88DA420BC156300BC6DFA /* Build configuration list for PBXProject "Base" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -426,8 +457,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15A88DA920BC156300BC6DFA /* LiveUIBase */,
-				15A88DB220BC156300BC6DFA /* LiveUIBaseTests */,
+				15A88DA920BC156300BC6DFA /* Base */,
+				15A88DB220BC156300BC6DFA /* BaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -532,18 +563,23 @@
 				15AD2A2020BCDCA900E3A180 /* Label.swift in Sources */,
 				15AD2A1F20BCDCA900E3A180 /* GradientView.swift in Sources */,
 				15AD2A2820BCDCD200E3A180 /* Style.swift in Sources */,
+				15020BF020C1FEC100BBADBD /* Alert.swift in Sources */,
 				15AD2A3020BCDCED00E3A180 /* UIScrollView+Pagination.swift in Sources */,
+				15020BEE20C1FEB000BBADBD /* InlineButton.swift in Sources */,
 				15A88DD620BC170B00BC6DFA /* ViewController.swift in Sources */,
+				15020BF320C1FEE500BBADBD /* Theme.swift in Sources */,
 				15AD2A3320BCDCED00E3A180 /* UIViewController+Navigation.swift in Sources */,
+				15020BEC20C1FEB000BBADBD /* SecondaryButton.swift in Sources */,
 				15A88DD920BC170B00BC6DFA /* UIColor+Tools.swift in Sources */,
 				15A88DDA20BC170B00BC6DFA /* String+Color.swift in Sources */,
+				15020BED20C1FEB000BBADBD /* Button.swift in Sources */,
 				15A88DE920BC1A2E00BC6DFA /* Debuggable.swift in Sources */,
-				15AD2A2320BCDCA900E3A180 /* Button.swift in Sources */,
 				15A88DD820BC170B00BC6DFA /* ErrorViewController.swift in Sources */,
 				15A88DD720BC170B00BC6DFA /* TableViewController.swift in Sources */,
 				15AD2A3120BCDCED00E3A180 /* UILabel+Style.swift in Sources */,
 				15AD2A2420BCDCA900E3A180 /* OnboardingView.swift in Sources */,
 				15A88DD520BC170B00BC6DFA /* Coordinator.swift in Sources */,
+				15020BEB20C1FEB000BBADBD /* PrimaryButton.swift in Sources */,
 				15AD2A3220BCDCED00E3A180 /* UIPageControl+Style.swift in Sources */,
 				15A88DDC20BC170B00BC6DFA /* Device.swift in Sources */,
 			);
@@ -562,7 +598,7 @@
 /* Begin PBXTargetDependency section */
 		15A88DB620BC156300BC6DFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 15A88DA920BC156300BC6DFA /* LiveUIBase */;
+			target = 15A88DA920BC156300BC6DFA /* Base */;
 			targetProxy = 15A88DB520BC156300BC6DFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -779,7 +815,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15A88DA420BC156300BC6DFA /* Build configuration list for PBXProject "LiveUIBase" */ = {
+		15A88DA420BC156300BC6DFA /* Build configuration list for PBXProject "Base" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15A88DBC20BC156300BC6DFA /* Debug */,
@@ -788,7 +824,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15A88DBE20BC156300BC6DFA /* Build configuration list for PBXNativeTarget "LiveUIBase" */ = {
+		15A88DBE20BC156300BC6DFA /* Build configuration list for PBXNativeTarget "Base" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15A88DBF20BC156300BC6DFA /* Debug */,
@@ -797,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15A88DC120BC156300BC6DFA /* Build configuration list for PBXNativeTarget "LiveUIBaseTests" */ = {
+		15A88DC120BC156300BC6DFA /* Build configuration list for PBXNativeTarget "BaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15A88DC220BC156300BC6DFA /* Debug */,
