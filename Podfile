@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.3'
 
-target 'LiveUIBase' do
+target 'Base' do
     
     use_frameworks!
     
@@ -10,7 +10,7 @@ target 'LiveUIBase' do
     pod 'Modular', '~> 1.0.0'
     pod 'AwesomeEnum', '~> 1.2.0'
 
-    target 'LiveUIBaseTests' do
+    target 'BaseTests' do
         inherit! :search_paths
         pod 'SpecTools'
     end

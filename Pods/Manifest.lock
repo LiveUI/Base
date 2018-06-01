@@ -14,7 +14,7 @@ DEPENDENCIES:
   - SpecTools
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AwesomeEnum
     - Modular
     - Presentables
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SpecTools: 77474921254b23ea50bb80f8763214f41d9d63c5
 
-PODFILE CHECKSUM: f271151518144ab4669b2f69b3bd424ea7dd834d
+PODFILE CHECKSUM: 9d6e9690ab6f0b2f198176d747abd3e158100cb3
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

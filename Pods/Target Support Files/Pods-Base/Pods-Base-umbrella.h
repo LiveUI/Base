@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_LiveUIBaseVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_LiveUIBaseVersionString[];
+FOUNDATION_EXPORT double Pods_BaseVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_BaseVersionString[];
 

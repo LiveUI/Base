@@ -43,7 +43,9 @@
 		15AD2A3320BCDCED00E3A180 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A2F20BCDCEC00E3A180 /* UIViewController+Navigation.swift */; };
 		15AD2A3620BCDEB900E3A180 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD2A3520BCDEB900E3A180 /* OnboardingViewController.swift */; };
 		7F6CA810347318BB0B73E276 /* Pods_LiveUIBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C12DBDA4F920BA78F569B8F /* Pods_LiveUIBaseTests.framework */; };
+		98C13DFB3E77E6BEFA698E41 /* Pods_BaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C160D4371D110A8C048EEB /* Pods_BaseTests.framework */; };
 		A34AB0BBAA58855993A35109 /* Pods_LiveUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA666AD848EE3CDCDE7BDFC /* Pods_LiveUIBase.framework */; };
+		C917B7DBE991D0A6EF9C9F83 /* Pods_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B75D39439AF76EB8FE7E6B /* Pods_Base.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +102,13 @@
 		44BC8688547E32241BB2B519 /* Pods-LiveUIBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBaseTests/Pods-LiveUIBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		44F85FC2F5723492DE372687 /* Pods-LiveUIBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBase/Pods-LiveUIBase.debug.xcconfig"; sourceTree = "<group>"; };
 		5733197A7342B0C33B353496 /* Pods-LiveUIBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBase/Pods-LiveUIBase.release.xcconfig"; sourceTree = "<group>"; };
+		610425E3BF75A84D05CEE87E /* Pods-BaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseTests/Pods-BaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DD370DDA1E978BAF940173F /* Pods-Base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.release.xcconfig"; path = "Pods/Target Support Files/Pods-Base/Pods-Base.release.xcconfig"; sourceTree = "<group>"; };
 		9406A3017766A9FF53B9362A /* Pods-LiveUIBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUIBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUIBaseTests/Pods-LiveUIBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A440E64D3BACC9898E93EDFC /* Pods-Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Base/Pods-Base.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B75D39439AF76EB8FE7E6B /* Pods_Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C160D4371D110A8C048EEB /* Pods_BaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91CE90B14EEA40F93A806D5 /* Pods-BaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseTests/Pods-BaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34AB0BBAA58855993A35109 /* Pods_LiveUIBase.framework in Frameworks */,
+				C917B7DBE991D0A6EF9C9F83 /* Pods_Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +127,7 @@
 			files = (
 				15A88DB420BC156300BC6DFA /* Base.framework in Frameworks */,
 				7F6CA810347318BB0B73E276 /* Pods_LiveUIBaseTests.framework in Frameworks */,
+				98C13DFB3E77E6BEFA698E41 /* Pods_BaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +369,8 @@
 			children = (
 				0BA666AD848EE3CDCDE7BDFC /* Pods_LiveUIBase.framework */,
 				0C12DBDA4F920BA78F569B8F /* Pods_LiveUIBaseTests.framework */,
+				B5B75D39439AF76EB8FE7E6B /* Pods_Base.framework */,
+				B8C160D4371D110A8C048EEB /* Pods_BaseTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,6 +382,10 @@
 				5733197A7342B0C33B353496 /* Pods-LiveUIBase.release.xcconfig */,
 				9406A3017766A9FF53B9362A /* Pods-LiveUIBaseTests.debug.xcconfig */,
 				44BC8688547E32241BB2B519 /* Pods-LiveUIBaseTests.release.xcconfig */,
+				A440E64D3BACC9898E93EDFC /* Pods-Base.debug.xcconfig */,
+				8DD370DDA1E978BAF940173F /* Pods-Base.release.xcconfig */,
+				B91CE90B14EEA40F93A806D5 /* Pods-BaseTests.debug.xcconfig */,
+				610425E3BF75A84D05CEE87E /* Pods-BaseTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -496,7 +512,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LiveUIBase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Base-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -514,7 +530,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LiveUIBaseTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BaseTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -527,7 +543,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LiveUIBaseTests/Pods-LiveUIBaseTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseTests/Pods-BaseTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SpecTools/SpecTools.framework",
 				"${BUILT_PRODUCTS_DIR}/AwesomeEnum/AwesomeEnum.framework",
 				"${BUILT_PRODUCTS_DIR}/Modular/Modular.framework",
@@ -544,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveUIBaseTests/Pods-LiveUIBaseTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseTests/Pods-BaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -726,7 +742,7 @@
 		};
 		15A88DBF20BC156300BC6DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F85FC2F5723492DE372687 /* Pods-LiveUIBase.debug.xcconfig */;
+			baseConfigurationReference = A440E64D3BACC9898E93EDFC /* Pods-Base.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -736,11 +752,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "LiveUIBase/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.LiveUIBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -751,7 +763,7 @@
 		};
 		15A88DC020BC156300BC6DFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5733197A7342B0C33B353496 /* Pods-LiveUIBase.release.xcconfig */;
+			baseConfigurationReference = 8DD370DDA1E978BAF940173F /* Pods-Base.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -761,11 +773,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "LiveUIBase/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.LiveUIBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -776,16 +784,12 @@
 		};
 		15A88DC220BC156300BC6DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9406A3017766A9FF53B9362A /* Pods-LiveUIBaseTests.debug.xcconfig */;
+			baseConfigurationReference = B91CE90B14EEA40F93A806D5 /* Pods-BaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LiveUIBaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.LiveUIBaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -795,16 +799,12 @@
 		};
 		15A88DC320BC156300BC6DFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44BC8688547E32241BB2B519 /* Pods-LiveUIBaseTests.release.xcconfig */;
+			baseConfigurationReference = 610425E3BF75A84D05CEE87E /* Pods-BaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LiveUIBaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.LiveUIBaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
