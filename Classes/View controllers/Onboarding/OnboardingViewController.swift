@@ -20,10 +20,21 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     let skipAll: Button.Tuple?
     
     /// Screen configurations
-    let configurations: [OnboardingView.Config]
+    public var configurations: [OnboardingView.Config] = [] {
+        didSet {
+            if self.isViewLoaded {
+                DispatchQueue.main.async {
+                    self.setupElements()
+                }
+            }
+        }
+    }
     
     /// Main scroll view
     public let scrollView = ScrollView()
+    
+    /// Skip all button
+    public var skipAllButton: InlineButton?
     
     /// Page indicator
     public let pageIndicator = UIPageControl()
@@ -31,9 +42,9 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     // MARK: Initialization
     
     /// Initializer
-    public init(_ configurations: [OnboardingView.Config], style: Style = .dark, skipAll: Button.Tuple? = nil) {
+    public init(style: Style = .dark, skipAll: Button.Tuple? = nil) {
         self.skipAll = skipAll
-        self.configurations = configurations
+        
         
         super.init(nibName: nil, bundle: nil)
         
@@ -78,9 +89,11 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     }
     
     func setupSkipAll() {
-        if let skipAllButton = skipAll.button() {
+        if let skipAll = skipAll {
+            let skipAllButton = InlineButton(skipAll)
             skipAllButton.sizeToFit()
-            skipAllButton.place.on(view, top: 30).right(-20).height(36)
+            skipAllButton.place.on(view, top: 50).right(-20).height(36)
+            self.skipAllButton = skipAllButton
         }
     }
     
@@ -108,9 +121,11 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     override open func setupElements() {
         super.setupElements()
         
-        setupScrollView()
-        setupSkipAll()
-        setupPageIndicator()
+        if configurations.count > 0 {
+            setupScrollView()
+            setupSkipAll()
+            setupPageIndicator()
+        }
     }
     
     // MARK: Actions
@@ -132,6 +147,13 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
         if pInt != pageIndicator.currentPage {
             pageIndicator.currentPage = pInt
             changedScreenIndex?(pInt)
+        }
+        
+        let hide = (pInt == (self.configurations.count - 1))
+        if (skipAllButton?.alpha == 1 && hide == true) || (skipAllButton?.alpha == 0 && hide == false) {
+            UIView.animate(withDuration: 0.2, delay: 0.0, options: .beginFromCurrentState, animations: {
+                self.skipAllButton?.alpha = hide ? 0 : 1
+            })
         }
     }
     

@@ -13,11 +13,10 @@
 extension UIColor {
     
     /// Initialize UIColor with hex string
-    convenience public init?(hex: String) {
+    convenience public init(hex: String) {
         guard let rgbColor = hex.hexSanitized.rgbColor else {
-            return nil
+            fatalError("Invalid hex string")
         }
-        
         self.init(red: rgbColor.red,
                   green: rgbColor.green,
                   blue: rgbColor.blue,

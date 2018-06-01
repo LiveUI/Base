@@ -14,7 +14,7 @@ final public class Lang {
     
     /// Translation for a key with a default value
     public static func get(_ key: String, default: String? = nil) -> String {
-        return key
+        return NSLocalizedString(key, comment: "")
     }
     
     /// Translation for a key with a default key-value

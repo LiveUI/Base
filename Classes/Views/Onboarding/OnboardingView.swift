@@ -64,15 +64,21 @@ open class OnboardingView: View {
     
     /// Initializer
     public init(image: UIImage? = nil, title: String, message: String, style: Style = .dark, action: Button.Tuple?, skip: Button.Tuple?) {
-        actionButton = action.button()
-        skipButton = skip.button()
+        if let action = action {
+            actionButton = PrimaryButton(action)
+        } else { actionButton = nil }
+        if let skip = skip {
+            skipButton = SecondaryButton(skip)
+        } else { skipButton = nil }
         
         super.init()
         
         // Image view & title
-        if let image = image {
+        if let image = image?.withRenderingMode(.alwaysTemplate) {
+            imageView.tintColor = style == .light ? .white : .darkText
             imageView.image = image
-            imageView.place.on(self).centerX().centerY(offset: -130)
+            imageView.contentMode = .scaleAspectFit
+            imageView.place.on(self).centerX().centerY(offset: -150).square(side: 120)
             
             titleLabel.place.below(imageView).sides()
         } else {
@@ -86,13 +92,14 @@ open class OnboardingView: View {
         messageLabel.place.below(titleLabel).sides()
         messageLabel.text = message
         messageLabel.textAlignment = .center
+        messageLabel.numberOfLines = 0
         messageLabel.style(with: style)
         
         // Skip button
         if let button = skipButton {
             addSubview(button)
             button.snp.makeConstraints { (make) in
-                make.bottom.equalToSuperview().offset(-20)
+                make.bottom.equalToSuperview().offset(-90)
             }
             button.make.sides().height(44)
         }
@@ -104,7 +111,7 @@ open class OnboardingView: View {
             } else {
                 addSubview(button)
                 button.snp.makeConstraints { (make) in
-                    make.bottom.equalToSuperview().offset(-20)
+                    make.bottom.equalToSuperview().offset(-90)
                 }
             }
             button.make.sides().height(44)
