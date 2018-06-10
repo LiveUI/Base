@@ -18,7 +18,7 @@ public struct InlineButtonTheme: ButtonTheme {
     
     public var fill: UIColor?
     
-    public var font: UIFont = UIFont.systemFont(ofSize: 15)
+    public var font: UIFont = Font.basic(size: 15)
     
     public var textColor: UIColor = .white
     
@@ -29,7 +29,7 @@ public struct InlineButtonTheme: ButtonTheme {
 open class InlineButton: Button {
     
     open override var theme: ButtonTheme {
-        return Theme.default.inlineButton ?? InlineButtonTheme()
+        return Theme.default.buttons.inlineButton
     }
     
 }

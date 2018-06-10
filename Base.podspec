@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-    s.name             = 'LiveUIBase'
+    s.name             = 'Base'
     s.version          = '0.0.1'
     s.summary          = 'Llalalala lalala lalalalalLlalalala lalala lalalalalLlalalala lalala lalalalalLlalalala lalala lalalalal'
 

@@ -17,7 +17,7 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     public var changedScreenIndex: ((Int) -> ())?
     
     /// Skip all
-    let skipAll: Button.Tuple?
+    public var skipAll: Button.Tuple?
     
     /// Screen configurations
     public var configurations: [OnboardingView.Config] = [] {
@@ -42,10 +42,7 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
     // MARK: Initialization
     
     /// Initializer
-    public init(style: Style = .dark, skipAll: Button.Tuple? = nil) {
-        self.skipAll = skipAll
-        
-        
+    public init(style: Style = .dark) {
         super.init(nibName: nil, bundle: nil)
         
         pageIndicator.style(with: style)

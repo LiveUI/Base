@@ -24,7 +24,7 @@ public struct SecondaryButtonTheme: ButtonTheme {
     
     public var fill: UIColor?
     
-    public var font: UIFont = UIFont.boldSystemFont(ofSize: 13)
+    public var font: UIFont = Font.basicBold(size: 13)
     
     public var textColor: UIColor = UIColor(hex: "EEEEEE")
     
@@ -35,7 +35,7 @@ public struct SecondaryButtonTheme: ButtonTheme {
 open class SecondaryButton: Button {
     
     open override var theme: ButtonTheme {
-        return Theme.default.secondaryButton ?? SecondaryButtonTheme()
+        return Theme.default.buttons.secondaryButton
     }
     
 }

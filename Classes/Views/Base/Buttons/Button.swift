@@ -39,7 +39,7 @@ public struct BasicButtonTheme: ButtonTheme {
     
     public var fill: UIColor?
     
-    public var font: UIFont = UIFont.boldSystemFont(ofSize: 13)
+    public var font: UIFont = Font.basicBold(size: 13)
     
     public var textColor: UIColor = .white
     
@@ -51,15 +51,14 @@ public protocol Themable {
     associatedtype ThemeType
     
     /// Theme
-    var theme: ButtonTheme { get }
-    
-    /// Load a theme
-    func load(_ theme: ThemeType)
+    var theme: ThemeType { get }
     
 }
 
 /// Basic button element
 open class Button: UIButton, Themable {
+    
+    public typealias ThemeType = ButtonTheme
     
     public typealias Tuple = (title: String, action: ActionClosure)
     
@@ -81,7 +80,7 @@ open class Button: UIButton, Themable {
     }
     
     /// Load a theme
-    open func load(_ theme: ButtonTheme? = nil) {
+    open func load(_ theme: ButtonTheme?) {
         let theme = theme ?? self.theme
         layer.cornerRadius = theme.cornerRadius ?? 0.0
         if let border = theme.border {

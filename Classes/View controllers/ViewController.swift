@@ -56,8 +56,21 @@ open class ViewController: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.barTintColor = .white
+        
         setupElements()
     }
 
+}
+
+
+extension ViewController {
+    
+    
+    
+    func setupMenuIcon() {
+        
+    }
+    
 }
 

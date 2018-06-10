@@ -11,7 +11,7 @@ import UIKit
 
 open class Alert {
     
-    open static func show(title: String, message: String, dismiss: String? = Lang.get("general.ok"), confirm: (title: String, action: (() -> Void))? = nil, on controller: UIViewController? = nil) {
+    public static func show(title: String, message: String, dismiss: String? = Lang.get("general.ok"), confirm: (title: String, action: (() -> Void))? = nil, on controller: UIViewController? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         if let dismiss = dismiss {
             alert.addAction(UIAlertAction(title: dismiss, style: .cancel, handler: { action in

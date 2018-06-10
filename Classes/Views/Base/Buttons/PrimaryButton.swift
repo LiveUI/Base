@@ -23,7 +23,7 @@ public struct PrimaryButtonTheme: ButtonTheme {
     
     public var fill: UIColor? = UIColor(hex: "EEEEEE")
     
-    public var font: UIFont = UIFont.boldSystemFont(ofSize: 13)
+    public var font: UIFont = Font.basicBold(size: 13)
     
     public var textColor: UIColor = UIColor(hex: "DE4DCB")
     
@@ -34,7 +34,7 @@ public struct PrimaryButtonTheme: ButtonTheme {
 open class PrimaryButton: Button {
     
     open override var theme: ButtonTheme {
-        return Theme.default.primaryButton ?? PrimaryButtonTheme()
+        return Theme.default.buttons.primaryButton
     }
     
 }

@@ -15,13 +15,14 @@ open class Theme {
     /// Singleton access property
     public static let `default` = Theme()
     
-    /// Primary button theme
-    public var primaryButton: ButtonTheme?
+    /// Buttons
+    public lazy var buttons = {
+        return Buttons()
+    }()
     
-    /// Secondary button theme
-    public var secondaryButton: ButtonTheme?
-    
-    /// Inline button theme
-    public var inlineButton: ButtonTheme?
+    /// Separators
+    public lazy var separators = {
+        return Separators()
+    }()
     
 }
