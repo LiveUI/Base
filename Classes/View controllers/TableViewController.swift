@@ -46,6 +46,9 @@ open class TableViewController: ViewController, PresentableTableViewManageable {
         super.viewDidLoad()
         
         tableView.place.on(andFill: view)
+        tableView.tableFooterView = UIView()
+        
+        setupData()
     }
     
     override open func viewWillAppear(_ animated: Bool) {
