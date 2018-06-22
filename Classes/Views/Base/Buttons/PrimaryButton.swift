@@ -23,7 +23,7 @@ public struct PrimaryButtonTheme: ButtonTheme {
     
     public var fill: UIColor? = UIColor(hex: "EEEEEE")
     
-    public var font: UIFont = Font.basicBold(size: 13)
+    public var font: UIFont = Font.bold(size: 13)
     
     public var textColor: UIColor = UIColor(hex: "DE4DCB")
     

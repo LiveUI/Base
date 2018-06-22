@@ -39,7 +39,7 @@ public struct BasicButtonTheme: ButtonTheme {
     
     public var fill: UIColor?
     
-    public var font: UIFont = Font.basicBold(size: 13)
+    public var font: UIFont = Font.bold(size: 13)
     
     public var textColor: UIColor = .white
     

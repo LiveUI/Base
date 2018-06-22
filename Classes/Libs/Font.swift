@@ -12,12 +12,19 @@
 
 public class Font {
     
-    public static func basic(size: CGFloat = 12) -> UIFont {
-        return UIFont.systemFont(ofSize: size)
+    public static func light(size: CGFloat = 12) -> UIFont {
+        let font = UIFont(name: "Rubik-Light", size: size)!
+        return font
     }
     
-    public static func basicBold(size: CGFloat = 12) -> UIFont {
-        return UIFont.boldSystemFont(ofSize: size)
+    public static func basic(size: CGFloat = 12) -> UIFont {
+        let font = UIFont(name: "Rubik-Regular", size: size)!
+        return font
+    }
+    
+    public static func bold(size: CGFloat = 12) -> UIFont {
+        let font = UIFont(name: "Rubik-Medium", size: size)!
+        return font
     }
     
 }

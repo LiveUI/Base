@@ -34,7 +34,7 @@ public struct ORSeparatorBasicTheme: ORSeparatorTheme {
     
     public var textColor: UIColor = .white
     
-    public var font: UIFont = Font.basicBold(size: 14)
+    public var font: UIFont = Font.bold(size: 14)
     
     public var spacing: CGFloat = 12
     
