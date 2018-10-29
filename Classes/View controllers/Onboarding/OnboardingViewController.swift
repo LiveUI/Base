@@ -48,11 +48,6 @@ open class OnboardingViewController: ViewController, UIScrollViewDelegate {
         pageIndicator.style(with: style)
     }
     
-    /// Not implemented
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: Elements
     
     func setupScrollView() {

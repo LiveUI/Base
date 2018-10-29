@@ -87,11 +87,6 @@ open class BackgroundView: View {
         gradientView?.place.on(andFill: self)
     }
     
-    /// Not implemented
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: Elements
     
     open override func setupElements() {

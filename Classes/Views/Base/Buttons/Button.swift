@@ -100,7 +100,7 @@ open class Button: UIButton, Themable {
     }
     
     /// Initializer
-    public init(image: UIImage? = nil, title: String, theme: ButtonTheme? = nil, action: ActionClosure? = nil) {
+    public init(image: UIImage? = nil, title: String? = nil, theme: ButtonTheme? = nil, action: ActionClosure? = nil) {
         super.init(frame: CGRect.zero)
         
         if let image = image {
@@ -124,6 +124,7 @@ open class Button: UIButton, Themable {
     }
     
     /// Not implemented
+    @available(*, unavailable, message: "Not implemented")
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

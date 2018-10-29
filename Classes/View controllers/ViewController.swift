@@ -42,6 +42,24 @@ open class ViewController: UIViewController {
         
     }
     
+    // MARK: Initialization
+    
+    /// Main initializer
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    /// Main initializer
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    /// Not implemented
+    @available(*, unavailable, message: "Not implemented")
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: View lifecycle
     
     /// LiveUI view replacement
@@ -51,6 +69,7 @@ open class ViewController: UIViewController {
     
     open override func loadView() {
         view = View()
+        view.backgroundColor = .white
     }
     
     override open func viewDidLoad() {
@@ -65,8 +84,6 @@ open class ViewController: UIViewController {
 
 
 extension ViewController {
-    
-    
     
     func setupMenuIcon() {
         

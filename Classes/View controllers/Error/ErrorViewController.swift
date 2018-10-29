@@ -96,11 +96,6 @@ open class ErrorViewController: ViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    /// Not implemented
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: Elements
     
     override open func setupElements() {

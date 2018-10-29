@@ -90,11 +90,6 @@ public class GradientView: View {
         super.init()
     }
     
-    /// Not implemented
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 }
 
 

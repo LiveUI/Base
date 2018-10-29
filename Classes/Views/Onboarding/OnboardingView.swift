@@ -123,11 +123,6 @@ open class OnboardingView: View {
         self.init(image: config.image, title: config.title, message: config.message, style: config.style, action: config.action, skip: config.skip)
     }
     
-    /// Not implemented
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: Elements
     
     open override func setupElements() {
