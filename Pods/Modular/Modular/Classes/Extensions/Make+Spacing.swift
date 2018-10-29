@@ -642,7 +642,7 @@ extension ViewAlias {
         } else {
             return snp
         }
-        #elseif os(macOS)
+        #elseif os(OSX)
         return snp
         #endif
     }

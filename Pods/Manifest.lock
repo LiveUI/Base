@@ -1,9 +1,9 @@
 PODS:
   - AwesomeEnum (1.2.0)
-  - Modular (1.0.0):
+  - Modular (1.0.2):
     - SnapKit
   - Presentables (0.6.7)
-  - SnapKit (4.0.0)
+  - SnapKit (4.0.1)
   - SpecTools (1.0.2)
 
 DEPENDENCIES:
@@ -23,9 +23,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AwesomeEnum: fe633a08020f92ab57277956c1df4d52fbfa27e0
-  Modular: 677f4e99e93b2a2b6e9794d08e2738dec735023f
+  Modular: bae1878d084e9ea31300417b16a3ff4baf6614af
   Presentables: e20dc46cdb8a83dd8473c584e146c953ac5e9c94
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SpecTools: 77474921254b23ea50bb80f8763214f41d9d63c5
 
 PODFILE CHECKSUM: 9d6e9690ab6f0b2f198176d747abd3e158100cb3
